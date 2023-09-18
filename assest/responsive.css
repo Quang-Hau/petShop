@@ -1,0 +1,359 @@
+/* pc */
+@media(min-width: 64em){
+  
+    .about__item--heading--2 {
+        margin: auto 81px;
+    }
+}
+
+/* tablet & mobile*/
+@media (max-width:46.25em) {
+
+}
+
+
+
+/* tablet */
+@media(min-width:46.25em) and (max-width:63.9375em) {
+    .about__item--heading--2 {
+        margin: auto 81px;
+    }
+
+    .about__item--content{
+        min-width: 100px;
+    }
+
+    .about__item img{
+        padding-top: 2em;
+        width: 50%;
+     }
+
+     .tab-item {
+        margin: auto 10px;
+        max-width: 60px;
+        display: flex;
+        justify-content:center;
+    }
+
+    .tab-icon {
+        font-size: 10px;
+        width: 20px;
+        position: relative;
+        top: 2px;
+    }
+      
+    .tab-pane h2 {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .ServicesRates__btn{
+        margin: 20px auto 20px auto;
+     }
+}
+
+
+
+/* mobile */
+@media(max-width:46.1875em){
+
+    /* navbar */
+
+    #banner {
+        padding-top: 90px;
+    }
+
+    .container__banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .banner__img {
+        width: 80%;
+    }
+
+    /* about */
+
+    .about {
+        margin-top: 5em;
+    }
+
+    .about__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0 0 3em 0;
+    }
+
+    .about__certification {
+        display: none;
+    }
+
+    .about__item--heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+     .about__item--heading > h5,
+     .about__item--heading > h1,
+     .about__item--heading > p {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         min-width: 300px;
+         max-width: 300px;
+     }
+
+    .about__item img{
+        padding-top: 2em;
+        width: 80%;
+     }
+
+     .about__item--content{
+        min-width: 90px;
+    }
+
+    .tab {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tab-item{
+        display: flex;
+        justify-content: space-between;
+    }
+
+     .tab-item {
+        margin: auto 5px;
+        max-width: 50px;
+        display: flex;
+        justify-content:center;
+    }
+
+    .tab-icon {
+        font-size: 10px;
+        /* width: 20px; */
+        position: relative;
+        top: 2px;
+    }
+
+    .tab-pane h2 {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    /* ServicesRates__1 */
+
+    #ServicesRates > h1 {
+        padding-bottom: 0em;
+    }
+
+    .ServicesRates{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ServicesRates__1{
+        display: flex;
+        align-items: center;
+        /* column-gap: 20px; */
+        overflow-x: scroll;
+        /* scroll-snap-type: x mandatory; */
+        overflow: hidden;
+    }
+
+    .ServicesRates_item{
+        scroll-snap-align: center;
+        min-width: 100%;
+        min-height: 210px;
+        animation: animation 10s infinite ;
+    }
+
+    .ServicesRates__img{
+       width: 70%;
+       margin: 40px auto 0 auto;
+    }
+
+    .ServicesRates__btn{
+       margin: 20px auto 0 auto;
+    }
+    
+    .ServicesRates_item p {
+        text-align: start;
+        max-width: 300px;
+    }
+
+    /* .petCareStaff */
+
+    @keyframes animation {
+        0% { 
+            opacity:0 ;
+
+        } 2% { 
+            opacity:1 ;
+
+        } 20% {  
+            transform: translate(0)
+
+        } 25% { 
+            transform: translate(-100%);
+
+        } 45% { 
+            transform: translate(-100%);
+
+        }50% { 
+            transform: translate(-200%);
+
+        }
+         70% {
+             transform: translate(-200%);
+
+        } 75% { 
+            transform: translate(-300%);
+
+        } 95% {
+             opacity:1;
+
+        } 98% { 
+            transform: translate(-300%);
+            opacity:0 ;
+        } 100% {
+            transform: translate(0);
+             opacity:0 ;
+        }
+
+    }
+
+    .petCareStaff__link {
+        padding: 3em 0 4em 0;
+    }
+
+    .petCareStaff{
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+    }
+
+    .petCareStaff_item{
+        scroll-snap-align: center;
+        min-width: 100%;
+        min-height: 210px;
+        animation: animation 10s infinite ;
+    }
+
+    .petCareStaff_item >img {
+        width: 90%;
+       margin: 0 21px;
+    }
+
+    .petCareStaff_heading > h1 {
+        font-size: 36px;
+    }
+
+    /* servicePrices_card */
+
+    .servicePrices_heading >h1{
+        padding: 1em 0;
+    }
+
+    .servicePrices_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .servicePrices_card_item{
+        margin-top: 1em;
+    }
+
+    /* Reviewa_slider */
+
+    .Reviewa_slider_item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Reviewa_slider_item >img {
+        width: 60% !important;
+    }
+
+    .Reviewa_slider_content {
+        padding: 0;
+    }
+
+    /* css Owlcarousel */
+    
+    .owl-next{
+        position: initial;
+        transform: none!important;
+        font-size: 33px !important;
+        background-color: transparent !important;
+        width: 0px !important;
+        height: 0px !important;
+        color: var(--orange-color) !important;
+        border-radius: none !important;
+    }
+
+    .owl-prev{
+        position: inherit;
+        transform: none !important;;
+        font-size: 33px !important;
+        color: var(--orange-color) !important;
+    }
+    
+    .owl-next:hover{
+        border: none !important;
+        background-color: none!important;
+        color:var(--orange-color)!important;
+        opacity: 0.7 !important;
+    }
+
+    /* ourBlog */
+
+
+    .ourBlog_title >p{
+        max-width: 310px;
+    }
+
+    .ourBlog_body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ourBlog_body_item{
+        margin: 1em 0;
+    }
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_info_container {
+        margin: -2em;
+        padding-top: 4em;
+    }
+
+    #footer{
+        padding-bottom: 4em;
+    }
+
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
